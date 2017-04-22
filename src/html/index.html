@@ -4,6 +4,37 @@
   <div class="container">
     <header class="header">
       <h1 class="header__title">Michelle<br>Tran</h1>
+      <ul class="header__contact">
+        <li>[Phone Number]</li>
+        <li>[Email Address]</li>
+      </ul>
     </header>
+    <main class="main">
+
+      <section class="resume-section">
+        <h2 class="resume-section__title">work</h2>
+        {% for job in work %}
+          <div class="resume-section__item">
+            <div class="resume-section__item-label">{{ job.date }}</div>
+            <h3 class="resume-section__item-title">{{ job.employer }}</h3>
+            <div class="resume-section__item-desc">{{ job.title }}</div>
+          </div>
+        {% endfor %}
+      </section>
+
+      <section class="resume-section">
+        <h2 class="resume-section__title">education</h2>
+        {% for item in education %}
+          <div class="resume-section__item">
+            <div class="resume-section__item-label">{{ item.date }}</div>
+            <h3 class="resume-section__item-title">{{ item.degree }}</h3>
+            <div class="resume-section__item-desc">{{ item.desc }}</div>
+          </div>
+        {% endfor %}
+      </section>
+
+    </main>
   </div>
 {% endblock %}
+
+

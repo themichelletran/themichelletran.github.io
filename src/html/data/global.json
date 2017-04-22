@@ -1,3 +1,31 @@
 {
-  "title": "Michelle Tran"
+  "title": "Michelle Tran",
+
+  "work": [
+    {
+      "date": "2016-present",
+      "employer": "Children's National Health System",
+      "title": "Marketing Specialist"
+    },
+    {
+      "date": "2015-2016",
+      "employer": "Travel Channel",
+      "title": "Marketing Strategy Coordinator"
+    },
+    {
+      "date": "2014-2015",
+      "employer": "Travel Channel",
+      "title": "Digital Ad Sales Coordinator"
+    },
+    {
+      "date": "2014",
+      "employer": "Travel Channel",
+      "title": "Marketing Strategy Intern"
+    },
+    {
+      "date": "2013",
+      "employer": "A&E Networks",
+      "title": "Marketing Intern"
+    }
+  ]
 }

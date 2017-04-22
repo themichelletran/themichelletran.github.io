@@ -3,13 +3,13 @@ p {
 }
 
 @mixin body--small {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
 @mixin body--medium {
-  font-size: 15px;
-  line-height: 2.3;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 @mixin body--large {

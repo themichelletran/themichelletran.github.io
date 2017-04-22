@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   color: $color;
+  font-family: font(serif);
   font-weight: $font-weight;
   line-height: $line-height;
 }
@@ -25,12 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @mixin heading--large($color: '') {
   @include heading($color);
-  font-size: 45px;
+  font-size: 48px;
 }
 
 @mixin heading--x-large($color: '') {
   @include heading($color, $line-height: 0.9);
-  font-family: font(serif);
   font-size: 70px;
 
   @include bp('medium') {

@@ -5,3 +5,18 @@
 .header__title {
   @include heading--x-large;
 }
+
+.header__contact {
+  display: flex;
+  margin-top: units(3);
+
+  li {
+    background-color: #000;
+    color: #fff;
+    padding: units(1) units(2);
+
+    &:not(:first-child) {
+      margin-left: units(1);
+    }
+  }
+}
