@@ -1,0 +1,7 @@
+.header {
+  padding: units(3) 0;
+}
+
+.header__title {
+  @include heading--x-large;
+}

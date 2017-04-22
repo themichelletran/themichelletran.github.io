@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+@mixin heading($color, $line-height: 1.2, $font-weight: 700) {
+  @if $color == '' {
+    $color: #000;
+  }
+
+  color: $color;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin heading--small($color: '') {
+  @include heading($color);
+  font-size: 30px;
+}
+
+@mixin heading--medium($color: '') {
+  @include heading($color, 1);
+  font-size: 35px;
+}
+
+@mixin heading--large($color: '') {
+  @include heading($color);
+  font-size: 45px;
+}
+
+@mixin heading--x-large($color: '') {
+  @include heading($color, $line-height: 0.9);
+  font-family: font(serif);
+  font-size: 70px;
+
+  @include bp('medium') {
+    font-size: 144px;
+  }
+}
